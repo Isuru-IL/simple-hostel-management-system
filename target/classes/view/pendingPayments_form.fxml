@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="ancPanePendingPayments" prefHeight="633.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel_management_hibernate.controller.PendingPaymentsFormController">
+   <children>
+      <TableView fx:id="tableStudentKeyMoney" focusTraversable="false" layoutX="57.0" layoutY="169.0" onMouseClicked="#tablePendingPayOnMouseClicked" opacity="0.9" prefHeight="366.0" prefWidth="1036.0">
+         <columns>
+            <TableColumn fx:id="colResId" prefWidth="114.0" text="reservation id" />
+            <TableColumn fx:id="colStId" prefWidth="118.0" text="student id" />
+            <TableColumn fx:id="colName" prefWidth="261.0" text="student name" />
+            <TableColumn fx:id="colAddress" prefWidth="158.0" text="address" />
+            <TableColumn fx:id="colContacts" prefWidth="135.0" text="contact" />
+            <TableColumn fx:id="colResDate" prefWidth="144.0" text="reservation date" />
+            <TableColumn fx:id="colKeyMoney" prefWidth="102.0" text="key money" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Label alignment="CENTER" layoutX="387.0" layoutY="36.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.8" prefHeight="55.0" prefWidth="376.0" text="Pending Payments" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -70,6 +70,9 @@ public class ReservationServiceImpl implements ReservationService {
         try {
             reservationRepository.setSession(session);
             reservationRepository.save(reservationDTO.toEntity());
+
+            updateAvailableRooms(reservationDTO);
+
             transaction.commit();
             return true;
         }catch (ConstraintViolationException exception){
@@ -82,6 +85,31 @@ public class ReservationServiceImpl implements ReservationService {
         }finally {
             session.close();
         }
+    }
+
+    public void updateAvailableRooms(ReservationDTO reservationDTO){
+        String roomTypeId = reservationDTO.toEntity().getReservationPK().getRoomTypeId();
+
+        int count = reservationRepository.getReservationCount(roomTypeId); //4
+
+        System.out.println("getReservationCount = "+count);
+
+        List<Object[]> list = reservationRepository.getMaxPersonsPerRoom(roomTypeId);
+        Object[] result = list.get(0);
+        int perRoom = (Integer) result[0];  //2
+        int roomQuantity = (Integer) result[1];  //5
+
+        System.out.println("perRoom = "+perRoom);
+        System.out.println("roomQuantity = "+roomQuantity);
+
+        int unavailable_rooms = count / perRoom;
+        int available_rooms = roomQuantity - unavailable_rooms;
+
+        System.out.println("unaviRoom s= "+unavailable_rooms);
+        System.out.println("aviRooms = "+available_rooms);
+
+        reservationRepository.updateAvailableRooms(available_rooms, roomTypeId);
+
     }
 
     @Override
@@ -111,6 +139,9 @@ public class ReservationServiceImpl implements ReservationService {
         try{
             reservationRepository.setSession(session);
             reservationRepository.delete(reservationDTO.toEntity());
+
+            updateAvailableRooms(reservationDTO);
+
             transaction.commit();
             return true;
         }catch (Exception e){

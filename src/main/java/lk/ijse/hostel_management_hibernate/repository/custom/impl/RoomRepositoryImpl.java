@@ -55,6 +55,10 @@ public class RoomRepositoryImpl implements RoomRepository {
 
     @Override
     public List<RoomProjection> getDetailsForRoomAvailabily() {
-        return null;
+        String sql = "SELECT new lk.ijse.hostel_management_hibernate.projection.RoomProjection" +
+                "(c.roomTypeId, c.roomType, c.availableRooms,c.keyMoney) FROM Room c";
+        Query query = session.createQuery(sql);
+        List<RoomProjection> list = query.list();
+        return list;
     }
 }

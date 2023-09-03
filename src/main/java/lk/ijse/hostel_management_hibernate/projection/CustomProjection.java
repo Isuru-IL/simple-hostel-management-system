@@ -1,8 +1,8 @@
-package lk.ijse.hostel_management_hibernate.view.tm;
+package lk.ijse.hostel_management_hibernate.projection;
 
 import java.time.LocalDate;
 
-public class StudentKeyMoneyTM {
+public class CustomProjection {
     private String resId;
     private String studentId;
     private String studentName;
@@ -11,10 +11,10 @@ public class StudentKeyMoneyTM {
     private LocalDate resDate;
     private String keyMoney;
 
-    public StudentKeyMoneyTM() {
+    public CustomProjection() {
     }
 
-    public StudentKeyMoneyTM(String resId, String studentId, String studentName, String address, String studentContact, LocalDate resDate, String keyMoney) {
+    public CustomProjection(String resId, String studentId, String studentName, String address, String studentContact, LocalDate resDate, String keyMoney) {
         this.resId = resId;
         this.studentId = studentId;
         this.studentName = studentName;
@@ -82,10 +82,10 @@ public class StudentKeyMoneyTM {
 
     @Override
     public String toString() {
-        return "StudentKeyMoneyTM{" +
+        return "CustomProjection{" +
                 "resId='" + resId + '\'' +
                 ", studentId='" + studentId + '\'' +
-                ", studentName='" + studentName + '\'' +
+                ", StudentName='" + studentName + '\'' +
                 ", address='" + address + '\'' +
                 ", studentContact='" + studentContact + '\'' +
                 ", resDate=" + resDate +

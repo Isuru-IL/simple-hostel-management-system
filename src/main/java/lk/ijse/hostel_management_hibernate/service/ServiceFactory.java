@@ -26,9 +26,9 @@ public class ServiceFactory {
             case RESERVATION:
                 return (T) new ReservationServiceImpl();
             case KEY_MONEY_STUDENT:
-                return null;
+                return (T) new PendingPaymentsServiceImpl();
             case HOME:
-                return null;
+                return (T) new HomeServiceImpl();
             case LOGIN:
                 return (T) new LoginServiceImpl();
             case SIGN_UP:

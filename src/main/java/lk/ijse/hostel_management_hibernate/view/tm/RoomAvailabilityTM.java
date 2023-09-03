@@ -5,17 +5,15 @@ public class RoomAvailabilityTM {
     private String roomType;
     private int availableRooms;
     private String keyMoney;
-    private int maxPersons;
 
     public RoomAvailabilityTM() {
     }
 
-    public RoomAvailabilityTM(String roomTypeId, String roomType, int availableRooms, String keyMoney, int maxPersons) {
+    public RoomAvailabilityTM(String roomTypeId, String roomType, int availableRooms, String keyMoney) {
         this.roomTypeId = roomTypeId;
         this.roomType = roomType;
         this.availableRooms = availableRooms;
         this.keyMoney = keyMoney;
-        this.maxPersons = maxPersons;
     }
 
     public String getRoomTypeId() {
@@ -50,22 +48,13 @@ public class RoomAvailabilityTM {
         this.keyMoney = keyMoney;
     }
 
-    public int getMaxPersons() {
-        return maxPersons;
-    }
-
-    public void setMaxPersons(int maxPersons) {
-        this.maxPersons = maxPersons;
-    }
-
     @Override
     public String toString() {
-        return "RoomProjection{" +
+        return "RoomAvailabilityTM{" +
                 "roomTypeId='" + roomTypeId + '\'' +
                 ", roomType='" + roomType + '\'' +
                 ", availableRooms=" + availableRooms +
                 ", keyMoney='" + keyMoney + '\'' +
-                ", maxPersons=" + maxPersons +
                 '}';
     }
 }

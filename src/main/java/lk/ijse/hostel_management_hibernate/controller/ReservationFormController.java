@@ -270,7 +270,7 @@ public class ReservationFormController {
         cmbRoomTypeId.setValue(columns.get(2).getCellData(row).toString());
         cmbPaymentStatus.setValue(columns.get(4).getCellData(row).toString());
 
-        txtResId.setStyle("-fx-text-fill: black; -fx-background-color: #ebebeb; -fx-background-radius: 15");
+        txtResId.setStyle("-fx-text-fill: black;-fx-background-radius: 10");
 
         btnSave.setDisable(false);
         btnUpdate.setDisable(false);
