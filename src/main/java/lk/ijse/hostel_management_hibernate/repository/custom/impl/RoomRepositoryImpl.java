@@ -18,7 +18,10 @@ public class RoomRepositoryImpl implements RoomRepository {
 
     @Override
     public List<String> loadRoomTypeIds() {
-        return null;
+        String sql ="SELECT room_type_id FROM room";
+        Query query = session.createNativeQuery(sql);
+        List<String> list = query.list();
+        return list;
     }
 
 

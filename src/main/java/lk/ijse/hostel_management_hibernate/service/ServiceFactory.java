@@ -24,7 +24,7 @@ public class ServiceFactory {
             case ROOM:
                 return (T) new RoomServiceImpl();
             case RESERVATION:
-                return null;
+                return (T) new ReservationServiceImpl();
             case KEY_MONEY_STUDENT:
                 return null;
             case HOME:

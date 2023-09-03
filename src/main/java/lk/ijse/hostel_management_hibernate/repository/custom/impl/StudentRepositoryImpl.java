@@ -17,7 +17,10 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     @Override
     public List<String> loadStudentIds() {
-        return null;
+        String sql = "SELECT st_id from Student";
+        Query query = session.createNativeQuery(sql);
+        List<String> list = query.list();
+        return list;
     }
 
     @Override
