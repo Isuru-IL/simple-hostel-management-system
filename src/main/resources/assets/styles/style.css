@@ -37,17 +37,67 @@
     -fx-font-family: "Eras Bold ITC";
 }
 
-.smallbtn{
-    -fx-background-color: #ebebeb;
+.btnSave{
+    -fx-background-color: linear-gradient(to right, #66b366, #b3d9b3);
+    -fx-background-radius: 10;
+}
+.btnSave:hover{
+    -fx-background-color: linear-gradient(to right, #4da64d, #66b366);
+    -fx-text-fill: white;
     -fx-background-radius: 10;
 }
 
-.smallbtn:hover{
-    -fx-background-color: linear-gradient(to right, #3195fd, #6fa2d9);
-            /*#3195fd;*/
-    -fx-text-fill: white;
-    -fx-opacity: 1;
+.btnUpdate{
+    -fx-background-color: linear-gradient(to right, #6fa2d9, #b3b3ff);
+    -fx-background-radius: 10;
 }
+.btnUpdate:hover{
+    -fx-background-color: linear-gradient(to right, #3195fd, #6fa2d9);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.btnDelete{
+    -fx-background-color: linear-gradient(to right, #ff6666, #ffb3b3);
+    -fx-background-radius: 10;
+}
+.btnDelete:hover{
+    -fx-background-color: linear-gradient(to right, #ff4d4d, #ff6666);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.btnClear{
+    -fx-background-color: linear-gradient(to right, #666666, #b3b3b3);
+    -fx-background-radius: 10;
+}
+.btnClear:hover{
+    -fx-background-color: linear-gradient(to right, #4d4d4d, #666666);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.btnBack{
+    -fx-background-color: linear-gradient(to right, #1a1a1a, #808080);
+    -fx-text-fill: #eeeeee;
+    -fx-background-radius: 10;
+}
+.btnBack:hover{
+    -fx-background-color: linear-gradient(to right, #000000, #1a1a1a);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.btnMain{
+    -fx-background-color: linear-gradient(to right, #c0c0c0, #e6e6e6);
+    -fx-background-radius: 10;
+}
+.btnMain:hover{
+    -fx-background-color: linear-gradient(to right, #000000, #808080);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
 
 .settings-icon:hover{
     -fx-scale-x: 0.8;

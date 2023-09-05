@@ -188,11 +188,11 @@ public class RoomFormController {
     }
 
     private void clearTxtFields() {
-        txtPersonQty.setText("");
-        txtRoomQty.setText("");
-        txtKeyMoney.setText("");
-        txtId.setText("");
-        txtType.setText("");
+        txtPersonQty.clear();
+        txtRoomQty.clear();
+        txtKeyMoney.clear();
+        txtId.clear();
+        txtType.clear();
     }
 
     private boolean noEmptyTextFields() {

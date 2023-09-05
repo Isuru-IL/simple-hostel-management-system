@@ -14,7 +14,7 @@ public class Launcher extends Application {
     }
     @Override
     public void start(Stage stage) throws Exception {
-        URL resource = Launcher.class.getResource("/view/reservationPage_form.fxml");
+        URL resource = Launcher.class.getResource("/view/home_form.fxml");
         Parent load = FXMLLoader.load(resource);
         stage.setScene(new Scene(load));
         stage.setTitle("Loading Page");

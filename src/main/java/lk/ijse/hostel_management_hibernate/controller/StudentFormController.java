@@ -230,10 +230,10 @@ public class StudentFormController {
     }
 
     void clearTxtFields(){
-        txtStId.setText("");
-        txtStName.setText("");
-        txtContact1.setText("");
-        txtAddress.setText("");
+        txtStId.clear();
+        txtStName.clear();
+        txtContact1.clear();
+        txtAddress.clear();
         dpDob.setValue(null);
         cmbGender.setValue("");
     }

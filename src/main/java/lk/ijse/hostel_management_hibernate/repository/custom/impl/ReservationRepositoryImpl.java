@@ -1,5 +1,6 @@
 package lk.ijse.hostel_management_hibernate.repository.custom.impl;
 
+import lk.ijse.hostel_management_hibernate.dto.CustomEntityDTO;
 import lk.ijse.hostel_management_hibernate.entity.Reservation;
 import lk.ijse.hostel_management_hibernate.repository.custom.ReservationRepository;
 import org.hibernate.Session;
@@ -73,6 +74,15 @@ public class ReservationRepositoryImpl implements ReservationRepository {
         Query query = session.createQuery(sql);
         query.setParameter("available_room_qty", available_rooms);
         query.setParameter("room_type_id", roomTypeId);
+        query.executeUpdate();
+    }
+
+    @Override
+    public void updatePendingPayment(CustomEntityDTO entityDTO) {
+        String sql = "UPDATE Reservation r SET r.reservationStatus = :status WHERE r.reservationId = :res_id ";
+        Query query = session.createQuery(sql);
+        query.setParameter("status", entityDTO.getStatus());
+        query.setParameter("res_id", entityDTO.getReservationId());
         query.executeUpdate();
     }
 }

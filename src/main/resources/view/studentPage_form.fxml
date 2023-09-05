@@ -19,7 +19,7 @@
             <Font name="System Bold" size="31.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnBack" layoutX="101.0" layoutY="771.0" onAction="#btnBackOnAction" opacity="0.8" prefHeight="36.0" prefWidth="118.0" style="-fx-background-radius: 5;" styleClass="smallbtn" stylesheets="@../assets/styles/style.css" text="Back">
+      <JFXButton fx:id="btnBack" layoutX="101.0" layoutY="771.0" onAction="#btnBackOnAction" opacity="0.8" prefHeight="36.0" prefWidth="118.0" styleClass="btnBack" stylesheets="@../assets/styles/style.css" text="Back">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -60,17 +60,17 @@
             <Insets />
          </opaqueInsets>
       </TableView>
-      <JFXButton fx:id="btnDelete" layoutX="1086.0" layoutY="287.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="80.0" styleClass="smallbtn" stylesheets="@../assets/styles/style.css" text="delete">
+      <JFXButton fx:id="btnDelete" layoutX="1086.0" layoutY="287.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="80.0" styleClass="btnDelete" stylesheets="@../assets/styles/style.css" text="delete">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnUpdate" layoutX="986.0" layoutY="287.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="80.0" styleClass="smallbtn" stylesheets="@../assets/styles/style.css" text="update">
+      <JFXButton fx:id="btnUpdate" layoutX="986.0" layoutY="287.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="80.0" styleClass="btnUpdate" stylesheets="@../assets/styles/style.css" text="update">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnSave" layoutX="882.0" layoutY="287.0" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="80.0" styleClass="smallbtn" stylesheets="@../assets/styles/style.css" text="save">
+      <JFXButton fx:id="btnSave" layoutX="882.0" layoutY="287.0" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="80.0" styleClass="btnSave" stylesheets="@../assets/styles/style.css" text="save">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -81,7 +81,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ComboBox>
-      <JFXButton fx:id="btnClear" layoutX="101.0" layoutY="287.0" onAction="#btnClearOnAction" opacity="0.8" prefHeight="35.0" prefWidth="80.0" styleClass="smallbtn" stylesheets="@../assets/styles/style.css" text="clear">
+      <JFXButton fx:id="btnClear" layoutX="101.0" layoutY="287.0" onAction="#btnClearOnAction" opacity="0.8" prefHeight="35.0" prefWidth="80.0" styleClass="btnClear" stylesheets="@../assets/styles/style.css" text="clear">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
