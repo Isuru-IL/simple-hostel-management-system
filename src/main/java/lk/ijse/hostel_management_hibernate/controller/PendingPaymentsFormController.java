@@ -1,5 +1,6 @@
 package lk.ijse.hostel_management_hibernate.controller;
 
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
@@ -80,14 +81,22 @@ public class PendingPaymentsFormController {
 
     @FXML
     void tablePendingPayOnMouseClicked(MouseEvent event) {
-        TablePosition pos = tableStudentKeyMoney.getSelectionModel().getSelectedCells().get(0);
-        int row = pos.getRow();
-        ObservableList<TableColumn<StudentKeyMoneyTM, ?>> columns = tableStudentKeyMoney.getColumns();
 
-        lblReservationId.setText(columns.get(0).getCellData(row).toString());
-        lblStudentId.setText(columns.get(1).getCellData(row).toString());
-        lblStudentName.setText(columns.get(2).getCellData(row).toString());
-        lblKeyMoney.setText(columns.get(6).getCellData(row).toString());
+        try{
+            TablePosition pos = tableStudentKeyMoney.getSelectionModel().getSelectedCells().get(0);
+            int row = pos.getRow();
+            ObservableList<TableColumn<StudentKeyMoneyTM, ?>> columns = tableStudentKeyMoney.getColumns();
+
+            lblReservationId.setText(columns.get(0).getCellData(row).toString());
+            lblStudentId.setText(columns.get(1).getCellData(row).toString());
+            lblStudentName.setText(columns.get(2).getCellData(row).toString());
+            lblKeyMoney.setText(columns.get(6).getCellData(row).toString());
+        }catch (RuntimeException exception){
+            AlertController.errormessage("This row is Empty");
+            System.out.println("tablePendingPayOnMouseClicked = "+exception);
+        }catch (Exception e){
+            System.out.println("tablePendingPayOnMouseClicked = "+e);
+        }
     }
 
     @FXML

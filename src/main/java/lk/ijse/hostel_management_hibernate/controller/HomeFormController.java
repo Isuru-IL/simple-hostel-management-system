@@ -71,6 +71,7 @@ public class HomeFormController {
         stage.resizableProperty().setValue(false);
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/pendingPayments_form.fxml"))));
+            stage.setTitle("Pending Payment Form");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -127,6 +128,7 @@ public class HomeFormController {
             e.printStackTrace();
         }
         stage.centerOnScreen();
+        stage.setTitle("Change Details");
         stage.show();
     }
 

@@ -14,9 +14,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="ancPaneReservation" prefHeight="833.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel_management_hibernate.controller.ReservationFormController">
+<AnchorPane fx:id="ancPaneReservation" prefHeight="833.0" prefWidth="1250.0" styleClass="gradient-anchorpane" stylesheets="@../assets/styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel_management_hibernate.controller.ReservationFormController">
    <children>
-      <Label alignment="CENTER" layoutX="427.0" layoutY="23.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.8" prefHeight="55.0" prefWidth="416.0" text="Reservation Management" textAlignment="CENTER" wrapText="true">
+      <Label alignment="CENTER" layoutX="427.0" layoutY="23.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.8" prefHeight="55.0" prefWidth="416.0" text="Reservation Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
             <Font name="System Bold" size="31.0" />
          </font>
@@ -72,27 +72,27 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <Label layoutX="104.0" layoutY="153.0" prefHeight="17.0" prefWidth="140.0" text="Reservation id">
+      <Label layoutX="104.0" layoutY="153.0" prefHeight="17.0" prefWidth="140.0" text="Reservation id" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="476.0" layoutY="231.0" prefHeight="17.0" prefWidth="140.0" text="Payment status">
+      <Label layoutX="476.0" layoutY="231.0" prefHeight="17.0" prefWidth="140.0" text="Payment status" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="102.0" layoutY="231.0" prefHeight="17.0" prefWidth="140.0" text="Reservation date">
+      <Label layoutX="102.0" layoutY="231.0" prefHeight="17.0" prefWidth="140.0" text="Reservation date" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="854.0" layoutY="153.0" prefHeight="17.0" prefWidth="140.0" text="Room type id">
+      <Label layoutX="854.0" layoutY="153.0" prefHeight="17.0" prefWidth="140.0" text="Room type id" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="478.0" layoutY="153.0" prefHeight="17.0" prefWidth="140.0" text="Student id">
+      <Label layoutX="478.0" layoutY="153.0" prefHeight="17.0" prefWidth="140.0" text="Student id" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

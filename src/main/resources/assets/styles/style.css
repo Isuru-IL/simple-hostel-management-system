@@ -1,13 +1,20 @@
 /* styles.css */
 .gradient-anchorpane {
-    -fx-background-color: linear-gradient(to bottom, #03172b, #000a12);
+    -fx-background-color: linear-gradient(to left, #000000, #00002a);
 }
 
 .loginBtn{
     /*-fx-background-color: linear-gradient(to top right  , #1C82AD, #86E5FF);*/
     /*-fx-background-color: linear-gradient(to top right  ,#000000 ,#FFFFFF);*/
-    -fx-background-color: linear-gradient(to top right  ,#b3b3b3 ,#000000);
+    -fx-background-color: linear-gradient(to top right  ,#999999 ,#000000);
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 0, 0, 0, 0);
+    -fx-background-radius: 20px;
+    -fx-text-fill: #FFFFFF;
+}
+.loginBtn:hover{
+    /*-fx-background-color: linear-gradient(to top right  , #1C82AD, #86E5FF);*/
+    /*-fx-background-color: linear-gradient(to top right  ,#000000 ,#FFFFFF);*/
+    -fx-background-color: linear-gradient(to top right  ,#333333, #000000);
     -fx-background-radius: 20px;
     -fx-text-fill: #FFFFFF;
 }

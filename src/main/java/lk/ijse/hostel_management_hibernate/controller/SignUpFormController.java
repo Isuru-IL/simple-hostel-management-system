@@ -92,7 +92,7 @@ public class SignUpFormController {
                     AlertController.animationMesseage("assets/images/wdoneIcon.png", "Sign Up", "New account create successful");
 
                 }else {
-                    AlertController.errormessage("New account create unsuccessful");
+//                    AlertController.errormessage("New account create unsuccessful");
                 }
             }else {
                 AlertController.errormessage("Password not same");
